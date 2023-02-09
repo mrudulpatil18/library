@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    font-family: 'Roboto Slab', serif;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+}
+
+.left{
+    background-color: peru;
+    padding: 50px;
+    padding-left: 60px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.books{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 30px;
+    padding-left: 100px;
+    padding-right: 50px;
+    padding-top: 100px;
+    gap: 50px;
+    background-color: whitesmoke;
+}
+
+.card{
+    border: solid 2px darkgray;
+    border-radius: 10px 13px 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px;
+    justify-content: space-evenly;
+    gap: 5px;
+    
+    
+}
+
+.card .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card .author{
+    font-size: 20px;
+}
+
+.card .pages{
+    font-size: 18px;
+}
+
+.card .read{
+    font-weight: bolder;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+.card button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: solid 1px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+.remove:hover{
+    border: solid 3px rosybrown;
+    width: 105px;
+    height: 32px;
+}
+.toggle:hover{
+    border: solid 3px sandybrown;
+    width: 105px;
+    height: 32px;
+}
+
+#addItem{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: solid 1px whitesmoke;
+    border-radius: 40%;
+    background-color: white;
+    align-self: center;
+}
+
+.add{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.area{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 10px;
+}
+
+input{
+    border-radius: 9px;
+    border: solid 1px;
+    padding: 5px;
+}
+
+select{
+    border-radius: 9px;
+    background-color: white;
+    border: solid 1px;
+}
+
+form button{
+    align-self: flex-end;
+    width: 70px;
+    height: 30px;
+    border-radius: 9px;
+    background-color: white;
+    margin-top: 15px;
+    border: solid 1px whitesmoke;
+}
+
+p{
+    color: white;
+    position: relative;
+    bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    align-self: center;
+}
