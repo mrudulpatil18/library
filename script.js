@@ -14,19 +14,18 @@ function Book(title, author, pages, haveRead) {
 }
 
 function Remove(book) {
-    let index = myLibrary.indexOf(book);
-    myLibrary.splice(index, 1);
-    displayLib();
+  let index = myLibrary.indexOf(book);
+  myLibrary.splice(index, 1);
+  displayLib();
 }
 
-function Toggle(card){
-    let read = card.querySelector('.read')
-    if(read.textContent == 'not read'){
-        read.textContent = 'read';
-    }
-    else{
-        read.textContent = 'not read'
-    }
+function Toggle(card) {
+  let read = card.querySelector(".read");
+  if (read.textContent == "not read") {
+    read.textContent = "read";
+  } else {
+    read.textContent = "not read";
+  }
 }
 
 function newCard(book) {
@@ -61,8 +60,6 @@ function newCard(book) {
     Remove(book);
   });
 
-
-
   let toggle = document.createElement("button");
   toggle.textContent = "toggle";
   toggle.classList.add("toggle");
@@ -70,7 +67,6 @@ function newCard(book) {
   toggle.addEventListener("click", function () {
     Toggle(card);
   });
-
 
   card.appendChild(toggle);
   card.appendChild(remove);
@@ -93,22 +89,22 @@ function getData() {
   form.innerHTML = `
         <div class="area">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
         </div>
 
         <div class="area">
           <label for="author">Author:</label>
-          <input type="text" id="author" name="author">
+          <input type="text" id="author" name="author" required>
         </div>
 
         <div class="area">
           <label for="pages">Pages:</label>
-          <input type="number" id="pages" name="pages">
+          <input type="number" id="pages" name="pages" required>
         </div>
 
         <div class="area">
           <label for="read">Read:</label>
-          <select name="read" id="read">
+          <select name="read" id="read" required>
               <option value="read">Yes</option>
               <option value="not read yet">No</option>
           </select>

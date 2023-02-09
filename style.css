@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0;
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -6,14 +6,14 @@ body{
     height: 100vh;
 }
 
-h1{
+h1 {
     font-family: 'Waiting for the Sunrise', cursive;
     font-weight: bold;
     font-size: 100px;
     color: white;
 }
 
-.left{
+.left {
     background-color: peru;
     padding: 50px;
     padding-left: 60px;
@@ -23,7 +23,7 @@ h1{
     align-items: center;
 }
 
-.books{
+.books {
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -36,7 +36,7 @@ h1{
     background-color: whitesmoke;
 }
 
-.card{
+.card {
     border: solid 2px darkgray;
     border-radius: 10px 13px 50px;
     display: flex;
@@ -44,30 +44,30 @@ h1{
     padding: 40px 30px;
     justify-content: space-evenly;
     gap: 5px;
-    
-    
+    overflow: hidden;
+
 }
 
-.card .title{
+.card .title {
     font-size: 30px;
     font-weight: bold;
 }
 
-.card .author{
+.card .author {
     font-size: 20px;
 }
 
-.card .pages{
+.card .pages {
     font-size: 18px;
 }
 
-.card .read{
+.card .read {
     font-weight: bolder;
     color: darkslategrey;
     font-size: 18px;
 }
 
-.card button{
+.card button {
     width: 100px;
     height: 30px;
     background-color: white;
@@ -77,18 +77,19 @@ h1{
 }
 
 
-.remove:hover{
+.remove:hover {
     border: solid 3px rosybrown;
     width: 105px;
     height: 32px;
 }
-.toggle:hover{
+
+.toggle:hover {
     border: solid 3px sandybrown;
     width: 105px;
     height: 32px;
 }
 
-#addItem{
+#addItem {
     width: 60px;
     height: 60px;
     font-size: 30px;
@@ -98,14 +99,14 @@ h1{
     align-self: center;
 }
 
-.add{
+.add {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -115,25 +116,25 @@ form{
     margin-top: 20px;
 }
 
-.area{
+.area {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 10px;
 }
 
-input{
+input {
     border-radius: 9px;
     border: solid 1px;
     padding: 5px;
 }
 
-select{
+select {
     border-radius: 9px;
     background-color: white;
     border: solid 1px;
 }
 
-form button{
+form button {
     align-self: flex-end;
     width: 70px;
     height: 30px;
@@ -143,7 +144,7 @@ form button{
     border: solid 1px whitesmoke;
 }
 
-p{
+p {
     color: white;
     position: relative;
     bottom: 20px;
