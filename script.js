@@ -1,16 +1,13 @@
 let myLibrary = [];
 let lib = document.querySelector(".books");
 
-function Book(title, author, pages, haveRead) {
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.haveRead = haveRead;
-  this.info = function () {
-    return (
-      "The " + title + " by " + author + ", " + pages + " pages, " + haveRead
-    );
-  };
+class Book{
+  constructor(title, author, pages, haveRead){
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.haveRead = haveRead;
+    }
 }
 
 function Remove(book) {
